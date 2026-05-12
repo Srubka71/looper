@@ -268,7 +268,7 @@ body::after {
 
   position: relative;
 
-  overflow: hidden;
+  overflow: visible;
 
   border: none;
 
@@ -1583,7 +1583,7 @@ body::after {
 .transport-panel,
 .pitch-panel {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 @keyframes panelLightSweep {
@@ -2071,4 +2071,25 @@ body.is-playing #beatImage {
     max-width: 260px;
     min-height: 56px;
   }
+}
+
+/* =========================
+   SAFARI / MAC FIX
+========================= */
+
+.pitch-panel {
+  min-height: 150px;
+  overflow: visible;
+  position: relative;
+  z-index: 5;
+}
+
+.beat-grid {
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
+}
+
+#pitch {
+  margin-bottom: 14px;
 }
