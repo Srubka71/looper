@@ -1776,3 +1776,30 @@ body.is-playing #beatImage {
     padding-bottom: 24px;
   }
 }
+
+/* =========================
+   MOBILE INTRO FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  .intro-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+  }
+
+  .welcome-box {
+    width: 92vw;
+    padding: 34px 22px 28px;
+  }
+
+  .welcome-box h2 {
+    font-size: 32px;
+  }
+
+  .welcome-box p {
+    font-size: 16px;
+  }
+}
