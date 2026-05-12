@@ -1556,28 +1556,6 @@ body::after {
     saturate(1.04);
 }
 
-/* delikatny light sweep na panelach */
-.info-bar::before,
-.meta-panel::before,
-.transport-panel::before,
-.pitch-panel::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  background:
-    linear-gradient(
-      110deg,
-      transparent 0%,
-      rgba(255,255,255,0.055) 45%,
-      transparent 70%
-    );
-
-  transform: translateX(-130%);
-  animation: panelLightSweep 9s ease-in-out infinite;
-}
-
 .info-bar,
 .meta-panel,
 .transport-panel,
@@ -2092,4 +2070,68 @@ body.is-playing #beatImage {
 
 #pitch {
   margin-bottom: 14px;
+}
+
+/* =========================
+   CINEMATIC BACKGROUND SWEEP — DESKTOP ONLY
+========================= */
+
+.page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      110deg,
+      transparent 0%,
+      transparent 38%,
+      rgba(234, 162, 33, 0.10) 48%,
+      rgba(255, 255, 255, 0.055) 50%,
+      rgba(234, 162, 33, 0.08) 52%,
+      transparent 62%,
+      transparent 100%
+    );
+
+  transform: translateX(-130%);
+
+  animation: backgroundCinematicSweep 22s ease-in-out infinite;
+}
+
+@keyframes backgroundCinematicSweep {
+  0% {
+    transform: translateX(-130%);
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.75;
+  }
+
+  32% {
+    transform: translateX(130%);
+    opacity: 0.45;
+  }
+
+  100% {
+    transform: translateX(130%);
+    opacity: 0;
+  }
+}
+
+/* Safari / Mac / iOS — wyłączamy sweep */
+html.is-safari .page::after {
+  display: none !important;
+  animation: none !important;
+}
+
+/* Mobile — też wyłączamy */
+@media (max-width: 768px) {
+  .page::after {
+    display: none !important;
+    animation: none !important;
+  }
 }
