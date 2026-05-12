@@ -5,17 +5,6 @@ let isPlaying = false;
 let currentButton = null;
 
 let loopTarget = "off";
-// =======================
-// BROWSER DETECTION
-// =======================
-
-const isSafari =
-  /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
-if (isSafari) {
-  document.documentElement.classList.add("is-safari");
-}
-
 let loopCounter = 0;
 
 // =======================
@@ -480,7 +469,7 @@ function setPitch(delta) {
   let value = parseFloat(pitch.value) + delta;
 
   value = Math.max(
-    0.75,
+    0.80,
     Math.min(1.20, value)
   );
 
