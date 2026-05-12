@@ -3,8 +3,8 @@ const TOTAL_SLOTS = 36;
 const beats = [
   {
     id: 1,
-    title: "Jakiś bit nr1",
-    producer: "Nie wiem",
+    title: "Dark Bounce",
+    producer: "SPK",
     bpm: 140,
     file: "assets/audio/beat1.mp3",
     image: "assets/images/beat1.jpg",
@@ -12,8 +12,8 @@ const beats = [
   },
   {
     id: 2,
-    title: "Ale nuta ło ja cie ",
-    producer: "Ktoś tam",
+    title: "Drill Night",
+    producer: "SPK",
     bpm: 145,
     file: "assets/audio/beat2.mp3",
     image: "assets/images/beat2.jpg",
@@ -21,8 +21,8 @@ const beats = [
   },
   {
     id: 3,
-    title: "Ale nakurcza v3",
-    producer: "Somsiad mechanik",
+    title: "Drill Night 2",
+    producer: "SPK",
     bpm: 145,
     file: "assets/audio/beat3.mp3",
     image: "assets/images/beat3.jpg",
@@ -31,7 +31,7 @@ const beats = [
   {
     id: 4,
     title: "Jakoś tak",
-    producer: "Wojnowicza",
+    producer: "SPK",
     bpm: 145,
     file: "assets/audio/beat4.mp3",
     image: "assets/images/beat4.jpg",
@@ -40,7 +40,7 @@ const beats = [
    {
     id: 5,
     title: "Jakoś tak3",
-    producer: "Czesio",
+    producer: "TaK",
     bpm: 12,
     file: "assets/audio/beat5.mp3",
     image: "assets/images/beat5.jpg",
@@ -49,7 +49,7 @@ const beats = [
   {
     id: 6,
     title: "Nie wiem",
-    producer: "Gienio",
+    producer: "TaK",
     bpm: 60,
     file: "assets/audio/beat6.mp3",
     image: "assets/images/beat6.jpg",
@@ -61,7 +61,7 @@ const beats = [
     producer: "Dalej nie wiem",
     bpm: 110,
     file: "assets/audio/beat7.mp3",
-    image: "assets/images/beat7.jpg",
+    image: "assets/images/beat7.png",
     available: true
   },
    {
@@ -70,7 +70,7 @@ const beats = [
     producer: "Wiem ale nie powiem",
     bpm: 69,
     file: "assets/audio/beat8.mp3",
-    image: "assets/images/beat8.jpg",
+    image: "assets/images/beat8.png",
     available: true
   },
    {
