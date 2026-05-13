@@ -130,7 +130,7 @@ const beats = [
    {
     id: 15,
     title: "Osiedlowe refleksje",
-    producer: "Magdalena z Kamionki",
+    producer: "Twister",
     bpm: 90,
     file: "assets/audio/beat15.mp3",
     image: "assets/images/beat15.png",
